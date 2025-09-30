@@ -1,0 +1,10 @@
+fastapi==0.95.2
+uvicorn[standard]==0.22.0
+transformers==4.40.0
+torch==2.2.0
+sentencepiece==0.1.99
+sqlite3-builtin # stdlib; no pip package required
+pydantic==1.10.8
+starlette==0.26.1
+langdetect==1.0.9
+googletrans==4.0.0-rc1

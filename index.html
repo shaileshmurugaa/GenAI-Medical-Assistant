@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GenAI Medical Assistant (Rural)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🩺 GenAI Medical Diagnosis Assistant</h1>
+      <p class="tagline">Designed for rural clinics • Multilingual • Offline-ready</p>
+    </header>
+
+    <form id="diagForm" class="form-card">
+      <label>Patient Name
+        <input id="p_name" placeholder="Enter full name">
+      </label>
+
+      <label>Age
+        <input id="p_age" type="number" placeholder="Years">
+      </label>
+
+      <label>Gender
+        <select id="p_gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>Symptoms
+        <textarea id="symptoms" rows="3" required placeholder="E.g. fever, cough, headache"></textarea>
+      </label>
+
+      <label>Past History / Vitals
+        <textarea id="history" rows="2" placeholder="E.g. BP 120/80, diabetic, asthma"></textarea>
+      </label>
+
+      <label>Current Medicines
+        <input id="meds" placeholder="E.g. paracetamol, amoxicillin">
+      </label>
+
+      <button type="submit" class="btn-primary">⚕️ Get Diagnosis</button>
+    </form>
+
+    <section id="result" class="result-card" style="display:none">
+      <h2>📋 Results</h2>
+      <div id="diffs" class="result-block"></div>
+      <div id="interactions" class="result-block"></div>
+      <div id="referral" class="result-block"></div>
+    </section>
+  </div>
+
+  <footer>
+    <p>GenAI Assistant • Rural Healthcare Innovation</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
